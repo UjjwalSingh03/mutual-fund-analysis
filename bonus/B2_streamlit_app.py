@@ -50,8 +50,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Database connection ────────────────────────────────────────────────────
-BASE    = Path(__file__).parent
-DB_PATH = BASE / "bluestock_mf.db"
+BASE    = Path(__file__).resolve().parent.parent
+DB_PATH = BASE / "data" / "db" / "bluestock_mf.db"
 PROC    = BASE / "data" / "processed"
 
 
